@@ -1,0 +1,31 @@
+body{
+    font-family: '微软雅黑';
+}
+.mt20 {
+    margin-top: 20px;
+}
+.section_title {
+    background: #34497e;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    color: #ffffff;
+}
+.fz20 {
+    font-size: 20px;
+}
+.form-group label {
+    padding-top: 7px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+.fb {
+    font-weight: bold;
+}
+
+.form-actions .estimate-button{
+    width: 49%;
+}
+
+.form-actions .cancel-button{
+    width: 48%;
+}

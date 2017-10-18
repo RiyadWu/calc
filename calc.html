@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>等额本息复投计算器</title>
+    <link href="trd/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/calc.css" rel="stylesheet">
+
+    <script src="trd/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script src="trd/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="trd/bootstrap-validator-0.11.9/dist/validator.min.js"></script>
+</head>
+<body>
+<div class="container mt20 input_page">
+    <form class="form-horizontal" id="estimate" role="document">
+
+        <div class="form-group">
+            <label for="id-principal" class="col-xs-3 control-label">本金(元)</label>
+            <div class="col-xs-9">
+                <input type="number" class="input_search form-control" required min='0'
+                       data-error="请填写本金, 正整数"
+                       id="id-principal" name="principal" placeholder="本金"/>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="id-interest-rate" class="col-xs-3 control-label">利率(%)</label>
+            <div class="col-xs-9">
+                <input type="number" class="input_search form-control" required min='0'
+                       data-error="请填写利率"
+                       id="id-interest-rate" name="interestRate" placeholder="利率"/>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="id-reinvest-no" class="col-xs-3 control-label">复投期数</label>
+            <div class="col-xs-9">
+                <input type="number" class="input_search form-control" required min='0' step="1"
+                       data-error="复投期数应为正整数"
+                       id="id-reinvest-no" name="reinvestNo" placeholder="复投期数"/>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="id-profit" class="col-xs-3 control-label">到期收益金额</label>
+            <div class="col-xs-9">
+                <input type="number" class="input_search form-control" disabled
+                       id="id-profit" name="profit" placeholder="到期收益金额"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="id-profit-rate" class="col-xs-3 control-label">到期收益率</label>
+            <div class="col-xs-9">
+                <input type="number" class="input_search form-control" disabled
+                       id="id-profit-rate" name="profitRate" placeholder="到期收益率"/>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+
+
+<script src="js/calc.js"></script>
+</html>
+
+
+
+
+
+
+
+
